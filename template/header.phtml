@@ -1,4 +1,35 @@
-<!DOCTYPE html>
+<?php
+
+/**
+ * Dummy user class for testing purposes.
+ * This should never be used in production!
+ * 
+ * Before deploying, please remove this comment completely.
+ */
+class DummyUser {
+    function isLogged() {
+        return true;
+    }
+    
+    function isAdmin() {
+        return false; //adjust to your needs
+    }
+
+    function getUserData() {
+        return [
+            "name" => "František Šiška",
+            "groups" => ["Domain Users", "Students"],
+            "uid" => "frantisek_siska",
+            "email" => "frantisek_siska@textilniskola.cz"
+        ];
+    }
+}
+
+// For testing, uncoment the following
+
+// $user = new DummyUser;
+
+?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
